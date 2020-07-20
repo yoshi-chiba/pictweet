@@ -4,6 +4,7 @@
       <h3>
         投稿する
       </h3>
+      <%= render 'layouts/error_messages', model: form.object %>
       <%= render partial: "form", locals: { form: form } %>
     <% end %>
   </div>
